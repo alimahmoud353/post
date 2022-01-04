@@ -1,0 +1,74 @@
+.t_user{margin-top:2rem;display:flex;}
+.center{transform:translateX(-50%);left:50%;}
+.u-photo{box-shadow: -1px 1px 5px 0.5px grey;}
+
+.card-body span:nth-child(3) {
+    margin-left: 15px;
+}
+.card-body span:nth-child(4) {
+    margin-left: 15px;
+}
+/*******************************************/
+
+label.label input[type="file"] {
+  position: absolute;
+  top: -1000px;
+}
+.label {
+  cursor: pointer;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 5px;
+  background: #dddddd;
+  display: inline-block;
+}
+.label:hover {
+  background: #5cbd95;
+}
+.label:active {
+  background: #9fa1a0;
+}
+.label:invalid+span {
+  color: #000000;
+}
+.label:valid+span {
+  color: #ffffff;
+}
+
+
+
+
+
+/************************************/
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+	cursor: pointer; /* "hand" cursor */
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: red;
+}
+.inputfile:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1200px) {body {background-color: lightblue;}}
